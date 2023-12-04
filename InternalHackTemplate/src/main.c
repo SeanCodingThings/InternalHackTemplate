@@ -21,6 +21,8 @@ bool __stdcall DllMain(HINSTANCE instance, unsigned long reason, void* reserved)
 {
     if ( reason == DLL_PROCESS_ATTACH )
     {
+        // Disables the DLL_THREAD_ATTACH and DLL_THREAD_DETACH notifications (for optimisation).
+        DisableThreadLibraryCalls(instance);
         // We are creating an extra thread to be able to write code with out the whole program stopping.
         void* thread = CreateThread
         (
