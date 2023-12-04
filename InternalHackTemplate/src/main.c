@@ -7,7 +7,7 @@ void HackFunction(HINSTANCE instance)
     freopen_s(&fp, "CONOUT$", "w", stdout);
 
     printf("Console was allocated succesfully!\n");
-    while (!GetAsyncKeyState(VK_ESCAPE))
+    while ( !GetAsyncKeyState(VK_ESCAPE) )
     {
         Sleep(100); // I do not wan't to put to much stress on the CPU!
     }
@@ -24,15 +24,15 @@ bool __stdcall DllMain(HINSTANCE instance, unsigned long reason, void* reserved)
         // We are creating an extra thread to be able to write code with out the whole program stopping.
         void* thread = CreateThread
         (
-            NULL,
-         0,
-          (void*)HackFunction,
+           NULL,
+           0,
+           (void*)HackFunction,
            instance,
-            0,
-             NULL
+           0,
+           NULL
         );
         // Checking if Creating the thread failed, and if it does, we close the thread.
-        if (thread == NULL)
+        if ( thread == NULL )
         {
             CloseHandle(thread);
         }
