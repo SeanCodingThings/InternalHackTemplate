@@ -11,7 +11,7 @@ Choose your preferred installation method:
 
 ### Option 1: GitHub Release
 
-Visit the [GitHub Release](link-to-github-release) page and download the latest release of InternalHackTemplate. Extract the files and you're ready to go!
+Visit the [GitHub Release](https://github.com/SeanCodingThings/InternalHackTemplate/releases/tag/InternalHackTemplate) page and download the latest release of InternalHackTemplate. Extract the files and you're ready to go!
 
 ### Option 2: Build from Source
 
