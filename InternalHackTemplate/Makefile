@@ -1,4 +1,4 @@
-PROJECT_NAME = VaxMenu
+PROJECT_NAME = InternalHackTemplate
 CC = gcc
 CXX = -std=c17
 SRC_PATH = src
